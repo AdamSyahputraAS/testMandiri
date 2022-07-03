@@ -10,7 +10,7 @@ import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.movie_item.view.*
 
 
-class GenreAdapter(private val movies: List<THMovie>): RecyclerView.Adapter<GenreAdapter.MovieViewHolder>(){
+class MovieAdapter(private val movies: List<THMovie>): RecyclerView.Adapter<MovieAdapter.MovieViewHolder>(){
 
     class MovieViewHolder(view: View): RecyclerView.ViewHolder(view){
         private val IMAGE_BASE = "https://image.tmdb.org/t/p/w500/"
@@ -31,5 +31,4 @@ class GenreAdapter(private val movies: List<THMovie>): RecyclerView.Adapter<Genr
     }
 
     override fun getItemCount(): Int = movies.size
-
 }

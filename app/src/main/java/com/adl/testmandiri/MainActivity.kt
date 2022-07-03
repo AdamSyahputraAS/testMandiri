@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         rv_movies_list
             .setHasFixedSize(true)
         getMovieData {genres: List<THMovie>->
-            rv_movies_list.adapter = GenreAdapter(genres)
+            rv_movies_list.adapter = MovieAdapter(genres)
 
         }
     }
